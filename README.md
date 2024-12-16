@@ -15,7 +15,7 @@ A collection of Python exercises created to help you practice the basics of Pyth
 1. Clone this repository
 2. Navigate to the project directory
 3. Install the required dependencies: `pip install -r requirements.txt`
-4Run the tests: `python -m pytest`
+4. Run the tests: `python -m pytest`
 
 ## Exercise Instructions
 
