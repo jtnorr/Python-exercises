@@ -5,7 +5,8 @@ import unittest
 from exercises.file_handling.file_handling_exercises import (
     read_and_count_words,
     process_csv_data,
-    save_filtered_data
+    save_filtered_data,
+    analyze_log_file
 )
 
 
@@ -64,3 +65,14 @@ class TestFileHandling(unittest.TestCase):
         with open('test_log.txt', 'w') as f:
             f.write('2024-01-01,ERROR,Database failed\n')
             f.write('2024-01-01,WARNING,Disk space low\n')
+            f.write('2024-01-02,ERROR,Network down\n')
+            f.write('2024-01-02,ERROR,Database failed\n')
+            f.write('2024-01-03,WARNING,High CPU usage\n')
+
+        # Test the function
+        result = analyze_log_file('test_log.txt')
+
+        # Check the result
+        self.assertEqual(result['ERROR'], 3)
+        self.assertEqual(result['WARNING'], 2)
+        self.assertEqual(result['INFO'], 0)

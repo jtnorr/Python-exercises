@@ -38,19 +38,7 @@ def read_and_count_words(filename: str) -> dict:
         >>> read_and_count_words('sample.txt')
         {'hello': 2, 'world': 1, 'python': 3}
     """
-
-    word_count = {}
-
-    for line in open(filename):
-        for word in line.split():
-            word = word.lower().strip('.,')
-
-            if word in word_count:
-                word_count[word] += 1
-            else:
-                word_count[word] = 1
-
-    return word_count
+    pass
 
 def process_csv_data(filename: str) -> dict:
     """
