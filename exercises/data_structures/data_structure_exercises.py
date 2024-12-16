@@ -6,6 +6,14 @@ This assignment focuses on:
 - Dictionaries
 - Data transformation
 - Working with complex data structures
+
+Tehtävä: Tietorakenteet ja niiden käsittely
+
+Tämä tehtävä keskittyy:
+- Listoihin ja listojen käsittelyyn
+- Sanakirjoihin
+- Tiedon muokkaamiseen
+- Monimutkaisten tietorakenteiden käsittelyyn
 """
 
 
