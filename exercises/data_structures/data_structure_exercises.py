@@ -12,6 +12,7 @@ This assignment focuses on:
 def filter_and_sort_list(numbers: list) -> list:
     """
     Filter out negative numbers and sort the remaining ones in ascending order.
+
     Suodata negatiiviset luvut ja järjestä jäljelle jääneet nousevaan järjestykseen.
 
     Args:
@@ -33,6 +34,10 @@ def merge_dictionaries(dict1: dict, dict2: dict) -> dict:
     the value should be the sum if both values are integers,
     or concatenated if both values are strings.
 
+    Yhdistää kaksi kirjastoa. Jos avain on olemassa molemmissa kirjastoissa,
+    arvon tulisi olla summa, jos molemmat arvot ovat kokonaislukuja,
+    tai yhdistetty, jos molemmat arvot ovat merkkijonoja.
+
     Args:
         dict1 (dict): First dictionary
         dict2 (dict): Second dictionary
@@ -53,6 +58,7 @@ def merge_dictionaries(dict1: dict, dict2: dict) -> dict:
 def group_by_type(items: list) -> dict:
     """
     Group items by their data type.
+    Lajittele kohteet niiden tietotyypin mukaan.
 
     Args:
         items (list): List of mixed-type items
@@ -75,6 +81,9 @@ def rotate_matrix(matrix: list) -> list:
     """
     Rotate a matrix 90 degrees clockwise.
     Matrix is represented as a list of lists.
+
+    Käännä matriisi 90 astetta myötäpäivään.
+    Matriisi on esitetty listana listoja.
 
     Args:
         matrix (list): Square matrix (n x n)
