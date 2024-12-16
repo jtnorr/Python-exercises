@@ -76,3 +76,8 @@ class TestFileHandling(unittest.TestCase):
         self.assertEqual(result['ERROR'], 3)
         self.assertEqual(result['WARNING'], 2)
         self.assertEqual(result['INFO'], 0)
+
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
