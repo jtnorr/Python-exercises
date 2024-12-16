@@ -1,10 +1,12 @@
 import unittest
+
 from exercises.numeric_operations.numeric_operations_exercises import (
     calculate_series_sum,
     is_prime,
     get_fibonacci_sequence,
     multiply_table
 )
+
 
 class TestNumericOperations(unittest.TestCase):
 
