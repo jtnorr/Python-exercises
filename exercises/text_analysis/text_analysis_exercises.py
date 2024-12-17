@@ -107,7 +107,8 @@ def is_palindrome(text: str) -> bool:
     A palindrome reads the same forwards and backwards, ignoring spaces and case.
 
     Tarkista, onko teksti palindromi.
-    Palindromi on sana tai lause, joka luetaan samalla tavalla eteen- ja taaksepäin, huomioiden vain kirjaimet.
+    Palindromi on sana tai lause, joka luetaan samalla tavalla
+    eteen- ja taaksepäin, huomioiden vain kirjaimet.
 
     Args:
         text (str): The input text
