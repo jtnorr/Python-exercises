@@ -1,3 +1,7 @@
+"""
+Unit tests for file handling exercises
+"""
+
 import csv
 import os
 import unittest
@@ -11,10 +15,11 @@ from exercises.file_handling.file_handling_exercises import (
 
 
 class TestFileHandling(unittest.TestCase):
+    """Unit tests for file handling exercises"""
 
     @classmethod
     def setUpClass(cls):
-        # Create test files
+        """Set up test files"""
         with open('test_text.txt', 'w') as f:
             f.write('Hello World\nHello Python\nPython is great')
 
@@ -33,13 +38,14 @@ class TestFileHandling(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        # Clean up test files
+        """Tear down test files"""
         test_files = ['test_text.txt', 'test_grades.csv', 'test_numbers.txt', 'test_output.txt']
         for file in test_files:
             if os.path.exists(file):
                 os.remove(file)
 
     def test_read_and_count_words(self):
+        """Test read_and_count_words function"""
         result = read_and_count_words('test_text.txt')
         self.assertEqual(result['hello'], 2)
         self.assertEqual(result['python'], 2)
@@ -48,11 +54,13 @@ class TestFileHandling(unittest.TestCase):
             read_and_count_words('nonexistent.txt')
 
     def test_process_csv_data(self):
+        """Test process_csv_data function"""
         result = process_csv_data('test_grades.csv')
         self.assertEqual(result['S001'], 85.5)
         self.assertEqual(result['S002'], 92.0)
 
     def test_save_filtered_data(self):
+        """Test save_filtered_data function"""
         count = save_filtered_data('test_numbers.txt', 'test_output.txt', 5.0)
         self.assertEqual(count, 2)
         with open('test_output.txt', 'r') as f:
@@ -61,7 +69,7 @@ class TestFileHandling(unittest.TestCase):
             self.assertTrue(all(float(x) >= 5.0 for x in lines))
 
     def test_analyze_log_file(self):
-        # Create a temporary log file
+        """Test analyze_log_file function"""
         with open('test_log.txt', 'w') as f:
             f.write('2024-01-01,ERROR,Database failed\n')
             f.write('2024-01-01,WARNING,Disk space low\n')

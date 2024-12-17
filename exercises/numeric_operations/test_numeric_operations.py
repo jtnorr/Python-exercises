@@ -1,3 +1,7 @@
+"""
+Unit tests for numeric operations exercises
+"""
+
 import unittest
 
 from exercises.numeric_operations.numeric_operations_exercises import (
@@ -9,8 +13,10 @@ from exercises.numeric_operations.numeric_operations_exercises import (
 
 
 class TestNumericOperations(unittest.TestCase):
+    """Unit tests for numeric operations exercises"""
 
     def test_calculate_series_sum(self):
+        """Test calculate_series_sum function"""
         self.assertEqual(calculate_series_sum(5), 15)
         self.assertEqual(calculate_series_sum(1), 1)
         self.assertEqual(calculate_series_sum(10), 55)
@@ -19,6 +25,7 @@ class TestNumericOperations(unittest.TestCase):
             calculate_series_sum(-1)
 
     def test_is_prime(self):
+        """Test is_prime function"""
         self.assertTrue(is_prime(2))
         self.assertTrue(is_prime(17))
         self.assertFalse(is_prime(4))
@@ -26,6 +33,7 @@ class TestNumericOperations(unittest.TestCase):
         self.assertFalse(is_prime(-5))
 
     def test_fibonacci_sequence(self):
+        """Test get_fibonacci_sequence function"""
         self.assertEqual(get_fibonacci_sequence(1), [0])
         self.assertEqual(get_fibonacci_sequence(5), [0, 1, 1, 2, 3])
         self.assertEqual(get_fibonacci_sequence(8), [0, 1, 1, 2, 3, 5, 8, 13])
@@ -33,6 +41,7 @@ class TestNumericOperations(unittest.TestCase):
             get_fibonacci_sequence(0)
 
     def test_multiply_table(self):
+        """Test multiply_table function"""
         self.assertEqual(multiply_table(2), [[1, 2], [2, 4]])
         self.assertEqual(multiply_table(3), [[1, 2, 3], [2, 4, 6], [3, 6, 9]])
         with self.assertRaises(ValueError):
