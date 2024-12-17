@@ -1,7 +1,7 @@
 """
-Assignment: Basic Numeric Operations and Control Flow
+Exercise: Basic Numeric Operations and Control Flow
 
-This assignment focuses on:
+This exercise focuses on:
 - Working with numbers
 - Conditional statements
 - Loops

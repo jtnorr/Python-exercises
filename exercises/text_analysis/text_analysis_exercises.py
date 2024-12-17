@@ -1,5 +1,5 @@
 """
-Assignment: Text Analysis Tool
+Exercise: Text Analysis Tool
 
 Your task is to create a set of functions that analyze text data. These functions will help you
 practice working with strings, lists, loops, and basic algorithms.

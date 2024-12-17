@@ -1,7 +1,7 @@
 """
-Assignment: File Handling and Data Processing
+Exercise: File Handling and Data Processing
 
-This assignment focuses on:
+This exercise focuses on:
 - Reading and writing files
 - Processing CSV data
 - Error handling

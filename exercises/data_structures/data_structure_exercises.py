@@ -1,7 +1,7 @@
 """
-Assignment: Data Structures and Manipulation
+Exercise: Data Structures and Manipulation
 
-This assignment focuses on:
+This exercise focuses on:
 - Lists and list operations
 - Dictionaries
 - Data transformation
